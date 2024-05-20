@@ -1,5 +1,6 @@
 import boto3
 from flask import Flask, jsonify, request
+from html_package import html_template
 
 session = boto3.Session(profile_name="ta-landing")
 s3 = session.client("s3")
@@ -30,12 +31,7 @@ def list_files():
             files = [obj["Key"] for obj in response["Contents"]]
         else:
             files = []
-
-        files_list_html = "<ul>"
-        for file in files:
-            files_list_html += f"<li>{file}</li>"
-        files_list_html += "</ul>"
-        return files_list_html
+        return html_template.generate_files_list_html(files)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

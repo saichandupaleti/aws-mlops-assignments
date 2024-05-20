@@ -11,11 +11,8 @@ This Repository contains assignments concerned with AWS cloud training
 ## Connect to EC2 instance "FlaskAppYat" using SSH
 - ssh -i RSAkey ubuntu@public-ip-of-ec2-instance
 
-## Activate the python virtual environment
-- source venv/bin/activate
-
-## Run the flask app on port 8085
-- flask --app app run --host=0.0.0.0 --port=8085
+## Activate the environment and launch the app
+- invoke deploy
 
 ## Check the flaskapp
 - Open the EC2 instance public-ip:8085 to visualize the flask application
