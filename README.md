@@ -8,7 +8,7 @@ This project creates a Flask application that lists files from folders in an S3 
 This Repository contains assignments concerned with AWS cloud training
 # Instructions to run the flask app on EC2 instance
 
-## Connect to EC2 instance "FlaskAppYat" using SSH
+## Connect to EC2 instance "FlaskApp" using SSH
 - ssh -i RSAkey ubuntu@public-ip-of-ec2-instance
 
 ## Activate the environment and launch the app
