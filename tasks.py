@@ -15,7 +15,7 @@ def run_flask_app(c):
     Runs the Flask app.
     """
     c.run(
-        "source activate flask-environment && pip install -e . && flask --app saiflaskapp/test_boto run --host=0.0.0.0 --port=8085"
+        "source activate flask-environment && pip install -e . && flask --app flaskapp/flask_db run --host=0.0.0.0 --port=8085"
     )
 
 
