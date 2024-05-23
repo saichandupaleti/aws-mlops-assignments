@@ -36,3 +36,4 @@ Create a Lambda function to scale down the auto-scaling group to 0 instances on 
 - Open the EC2 instance public-ip:8085 to visualize the flask application
 
 # Output snapshots
+
