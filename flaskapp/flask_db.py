@@ -16,8 +16,15 @@ conn = pymysql.connect(
 )
 
 
-# Function to insert details
 def insert_details(name, data):
+    """
+    Inserts a log entry into the database with the provided name and data.
+    The current timestamp is appended to the data.
+
+    Parameters:
+    - name (str): The name associated with the log entry.
+    - data (str): The data to be logged.
+    """
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     data_with_timestamp = f"{data} (Timestamp: {timestamp})"
     cur = conn.cursor()
@@ -27,8 +34,13 @@ def insert_details(name, data):
     conn.commit()
 
 
-# Function to get details
 def get_details():
+    """
+    Retrieves all log entries from the database.
+
+    Returns:
+    - list of tuples: Each tuple contains the name and data of a log entry.
+    """
     cur = conn.cursor()
     cur.execute("SELECT name, data FROM logs")
     details = cur.fetchall()
@@ -37,6 +49,14 @@ def get_details():
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+    """
+    Handles the main page of the application.
+    - GET: Displays the form and the list of log entries.
+    - POST: Inserts a new log entry and redirects to the main page.
+
+    Returns:
+    - str: The rendered HTML of the index page.
+    """
     if request.method == "POST":
         name = request.form["name"]
         data = request.form["data"]
