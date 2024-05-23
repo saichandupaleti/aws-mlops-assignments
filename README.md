@@ -36,4 +36,10 @@ Create a Lambda function to scale down the auto-scaling group to 0 instances on 
 - Open the EC2 instance public-ip:8085 to visualize the flask application
 
 # Output snapshots
+![Screenshot 2024-05-22 214635](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/65aa4c27-e26b-48ec-8ecb-dea31cbcf7a8)
+![Screenshot 2024-05-22 214617](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/e0ecda6b-a237-4094-bb86-b56e572c6416)
+![Screenshot 2024-05-22 211654](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/12711f0b-0817-40c7-9252-17b3ebfd150e)
+![image](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/0796a5c2-4b8c-433b-af8f-bedeccae0902)
+
+
 
