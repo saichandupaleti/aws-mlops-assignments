@@ -35,11 +35,16 @@ Create a Lambda function to scale down the auto-scaling group to 0 instances on 
 ## Check the flaskapp
 - Open the EC2 instance public-ip:8085 to visualize the flask application
 
-# Output snapshots
-![Screenshot 2024-05-22 214635](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/65aa4c27-e26b-48ec-8ecb-dea31cbcf7a8)
-![Screenshot 2024-05-22 214617](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/e0ecda6b-a237-4094-bb86-b56e572c6416)
-![Screenshot 2024-05-22 211654](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/12711f0b-0817-40c7-9252-17b3ebfd150e)
-![image](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/0796a5c2-4b8c-433b-af8f-bedeccae0902)
+
+# For notebooks
+Create two notebooks in the aws glue one contains pre-processing and other containing model creating and evaluation part which uses dataset inside s3
+Create a Workflow for those 2 notebooks by creating corresponding triggers and run the workflow
+## output snapshots
+![Screenshot 2024-05-24 122143](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/dd60ce99-23c2-4cfe-bf85-b813287ba5be)
+![Screenshot 2024-05-24 122159](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/4f0bab41-1ad6-4da6-ab8d-02de92f316d3)
+![Screenshot 2024-05-24 122217](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/27961d9c-e7f3-42cf-a881-8bd33b14fd91)
+![Screenshot 2024-05-24 122256](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/924ca94d-7efb-4280-a29b-f8d2426128bb)
+
 
 
 
