@@ -35,4 +35,15 @@ Create a Lambda function to scale down the auto-scaling group to 0 instances on 
 ## Check the flaskapp
 - Open the EC2 instance public-ip:8085 to visualize the flask application
 
-# Output snapshots
+# For notebooks
+Create two notebooks in the aws glue one contains pre-processing and other containing model creating and evaluation part which uses dataset inside s3
+Create a Workflow for those 2 notebooks by creating corresponding triggers and run the workflow
+## output snapshots
+![Screenshot 2024-05-24 122143](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/dd60ce99-23c2-4cfe-bf85-b813287ba5be)
+![Screenshot 2024-05-24 122159](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/4f0bab41-1ad6-4da6-ab8d-02de92f316d3)
+![Screenshot 2024-05-24 122217](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/27961d9c-e7f3-42cf-a881-8bd33b14fd91)
+![Screenshot 2024-05-24 122256](https://github.com/saichandupaleti/aws-mlops-assignments/assets/162572665/924ca94d-7efb-4280-a29b-f8d2426128bb)
+
+
+
+
